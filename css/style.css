@@ -68,6 +68,7 @@ h3 {
     height: 68px;
     box-shadow: 0 0 25px #0d0d18;
     font-weight: 600;
+    z-index: 1;
 }
 
 .header_logo {
