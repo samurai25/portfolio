@@ -77,6 +77,10 @@ h3 {
     color: #9b59b6;
 }
 
+.header_nav p {
+    display: none;
+}
+
 .header_nav {
     background-color: #0d0d18;
     display: flex;
@@ -103,7 +107,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #9b59b6; */
 }
 
 
@@ -124,6 +127,21 @@ h3 {
 
 .hero p {
     font-size: 1.3rem;
+}
+
+.hero h1, .hero p {
+    animation: fadeInHeading 1s ease-out forwards; 
+}
+
+@keyframes fadeInHeading {
+  from {
+    opacity: 0; 
+    transform: translateY(200px); 
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 /* PROJECTS */
@@ -255,6 +273,32 @@ h3 {
 
     .header_logo {
         display: none;
+    }
+
+    .header_nav {
+        position: relative;
+        top: -230px;
+        transition: top 0.5s ease-in-out;
+    }
+
+    .header_nav {
+        padding-bottom: 50px;
+    }
+
+    .header_nav p {
+        position: relative;
+        top: 50px;
+        right: 50%;
+        font-size: 3rem;
+        color: #902bb8;
+        display: inline-block;
+        transform: rotate(-180deg);
+    }
+
+    .header_nav:hover {
+        position: relative;
+        top: 0;
+        transition: top 0.5s ease-in-out;
     }
 }
 
